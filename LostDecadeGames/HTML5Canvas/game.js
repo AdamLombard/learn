@@ -50,8 +50,8 @@ var monster = {
 };
 var monstersCaught = 0;
 
-//Handle keyboard controls
-var keysdown = {};
+// Handle keyboard controls
+var keysDown = {};
 
 addEventListener("keydown", function (e) {
   keysDown[e.keyCode] = true;
@@ -60,3 +60,13 @@ addEventListener("keydown", function (e) {
 addEventListener("keyup", function (e) {
   delete keysDown[e.keyCode];
 }, false);
+
+// Reset the game when the player catches a monster
+var reset = function () {
+  hero.x = canvas.width / 2;
+  hero.y = canvas.height / 2;
+
+  // Place monster randomly on screen
+  monster.x = 32 + (Math.random() * (canvas.width - 64));
+  monster.y = 32 + (Math.random() * (canvas.height - 64));
+};
