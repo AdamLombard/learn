@@ -17,3 +17,23 @@ backgroundImage.onload = function () {
 }
 
 backgroundImage.src = "images/background.png"
+
+// Hero image
+var heroReady = false;
+var heroImage = new Image();
+
+heroImage.onload = function () {
+  heroReady = true;
+}
+
+heroImage.src = "images/hero.png"
+
+// Monster image
+var monsterReady = false;
+var monsterImage = new Image();
+
+monsterImage.onload = function() {
+  monsterReady = true;
+}
+
+monsterImage.src = "images/monster.png"
