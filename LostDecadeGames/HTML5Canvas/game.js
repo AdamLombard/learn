@@ -123,7 +123,7 @@ var render = function () {
 // Main Loop
 var main = function () {
   var now = Date.now();
-  var delta = now -time;
+  var delta = now - then;
 
   update(delta / 1000);
   render();
@@ -133,3 +133,8 @@ var main = function () {
   // Request to do this again ASAP
   requestAnimationFrame(main);
 };
+
+// Play the game!
+var then = Date.now()
+reset();
+main();
