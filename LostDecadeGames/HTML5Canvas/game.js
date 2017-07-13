@@ -98,3 +98,26 @@ var update = function (modifier) {
   }
 };
 
+// Draw all the things
+var render = function () {
+  if (backgroundReady) {
+    context.drawImage(backgroundImage, 0, 0);
+  }
+
+  if (heroReady) {
+    context.drawImage(heroImage, hero.x, hero.y);
+  }
+
+  if (monsterReady) {
+    context.drawImage(monsterImage, monster.x, monster.y);
+  }
+
+  // Score
+  context.fillStyle = "rgb(250, 250, 250)";
+  context.font = "24px Helvetica";
+  context.textAlign = "left";
+  context.textBaseline = "top";
+  context.fillText("Monsters caught: " + monstersCaught, 32, 32)
+};
+
+
