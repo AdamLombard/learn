@@ -43,8 +43,9 @@ var hero = {
   speed: 256,
   x: 0,
   y: 0
-}
+};
 var monster = {
   x: 0,
   y: 0
-}
+};
+var monstersCaught = 0;
