@@ -49,3 +49,14 @@ var monster = {
   y: 0
 };
 var monstersCaught = 0;
+
+//Handle keyboard controls
+var keysdown = {};
+
+addEventListener("keydown", function (e) {
+  keysDown[e.keyCode] = true;
+}, false);
+
+addEventListener("keyup", function (e) {
+  delete keysDown[e.keyCode];
+}, false);
