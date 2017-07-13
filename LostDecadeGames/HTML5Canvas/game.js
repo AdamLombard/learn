@@ -120,4 +120,16 @@ var render = function () {
   context.fillText("Monsters caught: " + monstersCaught, 32, 32)
 };
 
+// Main Loop
+var main = function () {
+  var now = Date.now();
+  var delta = now -time;
 
+  update(delta / 1000);
+  render();
+
+  then = now;
+
+  // Request to do this again ASAP
+  requestAnimationFrame(main);
+};
