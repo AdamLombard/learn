@@ -1,12 +1,36 @@
+/*
+  https://coolors.co/545f66-829399-d0f4ea-e8fcc2-b1cc74
+*/
+
 /* Global Styles */
 body {
-  background: lightgreen;
+
+}
+
+a {
+  color: #B1CC74;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* Header and Footer */
+header, footer {
+  background-color: #545F66;
+  color: whitesmoke;
+}
 
+header h1, header h2 {
+  color: #E8FCC2;
+}
 
 /* Work Experience */
-
+.work {
+  background-color: #829399;
+}
 
 /* Education */
+.education {
+  background-color: #D0F4EA;
+}
