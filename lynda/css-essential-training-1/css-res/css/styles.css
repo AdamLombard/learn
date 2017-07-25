@@ -22,6 +22,10 @@ a {
 a:hover {
   text-decoration: none;
 }
+.content-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 /* Header and Footer */
 header, footer {
