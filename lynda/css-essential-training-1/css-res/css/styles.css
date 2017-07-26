@@ -5,6 +5,7 @@
 /* Global Styles */
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 h1, h2 {
   font-family: 'Caveat', cursive;
@@ -15,6 +16,7 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-top: 0;
 }
 a {
   color: #B1CC74;
@@ -25,19 +27,26 @@ a:hover {
 .content-wrap {
   max-width: 600px;
   margin: 0 auto;
+  padding: 50px;
 }
-h2, p {
-  margin: 0;
-}
+
 
 /* Header and Footer */
 header, footer {
   background-color: #545F66;
   color: whitesmoke;
 }
-
+/* header */
 header h1, header h2 {
   color: #E8FCC2;
+}
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
 }
 
 /* Work Experience */
