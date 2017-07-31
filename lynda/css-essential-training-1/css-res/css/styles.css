@@ -28,6 +28,7 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
   padding: 50px;
+  overflow: auto;
 }
 
 
@@ -37,8 +38,17 @@ header, footer {
   color: whitesmoke;
 }
 /* header */
+header {
+  /* text-align: center; */
+}
 header h1, header h2 {
   color: #E8FCC2;
+  margin: 0;
+}
+.profile-image {
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
 }
 /* footer */
 footer {
