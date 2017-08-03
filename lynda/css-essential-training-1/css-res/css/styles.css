@@ -32,10 +32,19 @@ a:hover {
   text-decoration: none;
 }
 .content-wrap {
-  max-width: 1000px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 50px;
   overflow: auto;
+}
+.col-narrow {
+  width: 30%;
+  float: left;
+}
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 1em;
 }
 
 
@@ -54,8 +63,6 @@ header h1, header h2 {
 }
 .profile-image {
   border-radius: 50%;
-  float: left;
-  margin-right: 30px;
 }
 /* footer */
 footer {
