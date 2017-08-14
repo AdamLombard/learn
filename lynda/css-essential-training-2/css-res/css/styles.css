@@ -25,6 +25,9 @@ h2 {
   font-size: 40px;
   margin-top: 0;
 }
+h3 {
+  margin: 0;
+}
 a {
   color: #B1CC74;
 }
@@ -40,15 +43,14 @@ a:hover {
 .col-narrow {
   width: 30%;
   float: left;
-  border: solid 1px black;
-  min-height: 175px;
 }
 .col-wide {
   width: 70%;
   float: left;
-  border: solid 1px black;
   padding-left: 20px;
-  min-height: 175px;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 
 
@@ -81,8 +83,20 @@ footer {
 .work {
   background-color: #829399;
 }
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 50px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
 
 /* Education */
 .education {
   background-color: #D0F4EA;
+}
+p + h3 {
+  margin-top: 30px;
 }
