@@ -79,6 +79,22 @@ footer {
   display: inline-block;
 }
 
+
+/* Navigation */
+nav {
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+nav a:hover {
+  color: white;
+}
+
 /* Work Experience */
 .work {
   background-color: #829399;
