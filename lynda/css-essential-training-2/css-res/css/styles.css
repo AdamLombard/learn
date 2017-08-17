@@ -83,6 +83,9 @@ footer {
 /* Navigation */
 nav {
   text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
 }
 nav a {
   display: inline-block;
