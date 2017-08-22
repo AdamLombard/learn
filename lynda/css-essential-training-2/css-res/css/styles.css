@@ -114,7 +114,9 @@ nav a:hover {
 
 /* Work Experience */
 .work {
-  background-color: #829399;
+  background: linear-gradient(rgba(14, 153, 174, 0.8),rgba(141, 153, 174, 0.6)), 
+  url(https://unsplash.it/400/300?image=1049) no-repeat fixed;
+background-size: cover;
 }
 h3 ~ p {
   margin: 0;
@@ -128,7 +130,9 @@ h3 ~ p {
 
 /* Education */
 .education {
-  background-color: #D0F4EA;
+  background: linear-gradient(rgba(11, 153, 174, 0.8),rgba(141, 153, 174, 0.6)), 
+              url(https://unsplash.it/g/400/300) no-repeat fixed;
+  background-size: cover;
 }
 p + h3 {
   margin-top: 30px;
