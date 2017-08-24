@@ -1,44 +1,21 @@
-var pens;
-pens = ["red", "blue", "green", "orange"];
+// Regular function, called explicitly by name:
+function multiply() {
+  var result = 3 * 4;
+  console.log("3 multiplied by 4 is ", result);
+}
+multiply();
 
-console.log("Before: ", pens);
+// Anonymous function stored in variable.
+// Invoked by calling the variable as a function:
+var divided = function() {
+  var result = 3 / 4;
+  console.log("3 divided by 4 is ", result);
+}
+divided();
 
-// PROPERTIES:
-// Get a property of an object by name:
-// console.log("Array length: ", pens.length);
-
-// METHODS:
-// Reverse the array:
-// pens.reverse();
-
-// Remove the first value of the array:
-// pens.shift();
-
-// Add comma-separated list of values to the front of the array:
-// pens.unshift("purple", "black");
-
-// Remove the last value of the array:
-// pens.pop();
-
-// Add comma-separated list of values to the end of the array:
-// pens.push("pink", "prussian blue");
-
-// Find the specified position (pos) and remove n number of items from the array. Arguments: pens.splice(pos,n):
-// pens.splice(1, 2) // Starts at the seccond item and removes two items.
-
-// console.log("After: ", pens);
-
-// Create a copy of an array. Typically assigned to a new variable:
-// var newPens = pens.slice();
-// console.log("New pens: ", newPens);
-
-// Return the first element that matches the search parameter after the specified index position. Defaults to index position 0. Arguments: pens.indexOf(search, index):
-// var result = pens.indexOf('blue', 0);
-// console.log("The search result index is: ", result);
-
-// Return the items in an array as a comma separated string. The separator argument can be used to change the comma to something else. Arguments: pens.join(separator):
-var arrayString = pens.join(', ');
-console.log("String from array: ", arrayString);
-
-// MDN documentation for Array:
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// Immediately Invoked Function Expression.
+// Runs as soon as the browser finds it:
+(function() {
+  var result = 12 / 0.75;
+  console.log("12 divided by 0.75 is ", result);
+}())
