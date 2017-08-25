@@ -1,26 +1,17 @@
-// var course = new Object();
-
-// course.title = "JavaScript Essential Training";
-// course.instructor = "Morten Rand-Hendriksen";
-// course.level = 1;
-// course.published = true;
-// course.views = 0;
-
-var course = {
-  title: "JavaScript Essential Training",
-  instructor: "Morten Rand-Hendriksen",
-  level: 1,
-  published: true,
-  views: 0,
-  updateViews: function() {
-    this.views++;
+function Course(title, instructor, level, published, views) {
+  this.title = title;
+  this.instructor = instructor;
+  this.level = level;
+  this.published = published;
+  this.views = views;
+  this.updateViews = function() {
+    return ++this.views;
   }
 }
 
-console.log(course.views);
-course.updateViews();
-course.updateViews();
-course.updateViews();
-course.updateViews();
-console.log(course.views);
+var courses = [
+  new Course("JavaScript Essential Training", "Morten Rand-Hendriksen", 1, true, 0),
+  new Course("Up and Running with ECMAScript 6", "Eve Porcello", 1, true, 123456)
+]
 
+console.log(courses[0].instructor);
