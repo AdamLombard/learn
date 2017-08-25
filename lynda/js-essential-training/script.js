@@ -1,17 +1,12 @@
-function findBiggestFraction(a,b) {
-  console.log("Fraction a: ", firstFraction);
-  console.log("Fraction b: ", secondFraction);
+function logScope() {
+  var localVar = 2;
 
-  var result;
+  if (true) {
+    let localVar = "I'm diff!";
+    console.log("inner :", localVar);
+  }
 
-  a>b ? result = ["a",a] : result = ["b",b];
-  return result;
+  console.log("outer :", localVar);
 }
 
-var firstFraction = 7/16;
-var secondFraction = 13/25;
-
-var fractionResult = findBiggestFraction(firstFraction,secondFraction);
-console.log("Fraction " + fractionResult[0] + " with a value of " + fractionResult[1] + " is the biggest.");
-
-console.log(result);
+logScope();
