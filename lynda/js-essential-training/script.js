@@ -1,17 +1,19 @@
-function Course(title, instructor, level, published, views) {
-  this.title = title;
-  this.instructor = instructor;
-  this.level = level;
-  this.published = published;
-  this.views = views;
-  this.updateViews = function() {
-    return ++this.views;
+function giveMeEms(pixels) {
+  var baseValue = 16;
+
+  function doTheMath() {
+    return pixels/baseValue;
   }
+
+  return doTheMath;
 }
 
-var courses = [
-  new Course("JavaScript Essential Training", "Morten Rand-Hendriksen", 1, true, 0),
-  new Course("Up and Running with ECMAScript 6", "Eve Porcello", 1, true, 123456)
-]
+var smallSize = giveMeEms(12);
+var mediumSize = giveMeEms(18);
+var largeSize = giveMeEms(24);
+var xlargeSize = giveMeEms(32);
 
-console.log(courses[0].instructor);
+console.log("Small size: ", smallSize());
+console.log("Medium size: ", mediumSize());
+console.log("Large size: ", largeSize());
+console.log("Extra Large size: ", xlargeSize());
