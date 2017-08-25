@@ -1,12 +1,26 @@
-function logScope() {
-  var localVar = 2;
+// var course = new Object();
 
-  if (true) {
-    let localVar = "I'm diff!";
-    console.log("inner :", localVar);
+// course.title = "JavaScript Essential Training";
+// course.instructor = "Morten Rand-Hendriksen";
+// course.level = 1;
+// course.published = true;
+// course.views = 0;
+
+var course = {
+  title: "JavaScript Essential Training",
+  instructor: "Morten Rand-Hendriksen",
+  level: 1,
+  published: true,
+  views: 0,
+  updateViews: function() {
+    this.views++;
   }
-
-  console.log("outer :", localVar);
 }
 
-logScope();
+console.log(course.views);
+course.updateViews();
+course.updateViews();
+course.updateViews();
+course.updateViews();
+console.log(course.views);
+
