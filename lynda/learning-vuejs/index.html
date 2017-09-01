@@ -15,7 +15,14 @@
   
   <main>
     <div id="app">
-      <h1>{{ msg }}</h1>
+      <h1>{{msg}}</h1>
+      <!-- <a href="{{url}}">Google</a> -->
+      <a v-bind:href="url">Home</a>
+      <p>
+        <form>
+          Name: <input type="text" :value="name">
+        </form>
+      </p>
     </div>
   </main>
   
