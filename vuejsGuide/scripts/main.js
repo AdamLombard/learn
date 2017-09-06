@@ -1,5 +1,5 @@
 Vue.component('component-name', {
-  template: "<p> I'm a Vue component!"
+  template: "<p> I'm a Vue component!</p>"
 });
 
 var vm = new Vue({
@@ -7,5 +7,11 @@ var vm = new Vue({
 
   data: {
     message: 'Hello from Vue!'
+  },
+
+  computed: {
+    reverseMessage: function () {
+      return this.message.split('').reverse().join('');
+    }
   }
 });
